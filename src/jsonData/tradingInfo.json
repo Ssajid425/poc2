@@ -1,0 +1,128 @@
+{
+    "sectionName": "tradingInfo",
+    "sectionKey": 5,
+    "cards": [
+        {
+            "type": "question",
+            "cardKey": 0,
+            "headerIcon": "TRADING_EXPERIENCE_ICON",
+            "isMultiSelect": false,
+            "header": "purposeOfAccount",
+            "options": [
+                {
+                    "label": "DIVERSIFICATION",
+                    "value": "DIVERSIFICATION"
+                },
+                {
+                    "label": "HEDGING",
+                    "value": "HEDGING"
+                },
+                {
+                    "label": "LONG_TERM_GROWTH",
+                    "value": "LONG_TERM_GROWTH"
+                },
+                {
+                    "label": "SHORT_TERM_SPECULATION",
+                    "value": "SHORT_TERM_SPECULATION"
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "cardKey": 1,
+            "headerIcon": "TRADING_CFD_ICON",
+            "isMultiSelect": false,
+            "header": "newToTrading",
+            "dependency": [
+                {
+                    "sectionKey": 6,
+                    "cardKey": 0,
+                    "value": true
+                }
+            ],
+            "optionWidth": "short",
+            "options": [
+                {
+                    "label": "YES",
+                    "value": true,
+                    "icon": "check_circle_24px"
+                },
+                {
+                    "label": "NO",
+                    "value": false,
+                    "icon": "cancel_24px"
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "cardKey": 2,
+            "headerIcon": "TRADING_CFD_ICON",
+            "isMultiSelect": true,
+            "header": "tradingCfd",
+            "subHeader": "TRADING_INFO_SUBHEADER",
+            "backButton": true,
+            "column": 1,
+            "columnWidth": 500,
+            "dependency": [
+                {
+                    "sectionKey": 6,
+                    "cardKey": 0,
+                    "value": [
+                        "FORMAL_EDUCATION",
+                        "FINANCE_PROFESSIONAL"
+                    ]
+                },
+                {
+                    "sectionKey": 6,
+                    "cardKey": 0,
+                    "value": "FINANCE_PROFESSIONAL"
+                },
+                {
+                    "sectionKey": 6,
+                    "cardKey": 0,
+                    "value": "FORMAL_EDUCATION"
+                }
+            ],
+            "options": [
+                {
+                    "label": "FORMAL_EDUCATION",
+                    "value": "FORMAL_EDUCATION",
+                    "icon": "book_24px"
+                },
+                {
+                    "label": "TRADED_BEFORE",
+                    "value": "TRADED_BEFORE",
+                    "icon": "assessment_24px"
+                },
+                {
+                    "label": "FINANCE_PROFESSIONAL",
+                    "value": "FINANCE_PROFESSIONAL",
+                    "icon": "card_travel"
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "cardKey": 3,
+            "headerIcon": "TRADING_CFD_ICON",
+            "header": "noOfTradedCFD",
+            "subHeader": "",
+            "column": 3,
+            "options": [
+                {
+                    "label": "LESS_THAN_10_TRADES",
+                    "value": "LESS_THAN_10_TRADES"
+                },
+                {
+                    "label": "10_19_TRADES",
+                    "value": "10_19_TRADES"
+                },
+                {
+                    "label": "20_PLUS_TRADES",
+                    "value": "20_PLUS_TRADES"
+                }
+            ]
+        }
+    ]
+}

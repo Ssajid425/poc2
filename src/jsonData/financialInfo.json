@@ -1,0 +1,294 @@
+{
+    "sectionName": "financialInfo",
+    "sectionKey": 2,
+    "cards": [
+        {
+            "type": "question",
+            "cardKey": 0,
+            "headerIcon": "ANNUAL_INCOME_ICON",
+            "isMultiSelect": false,
+            "header": "totalAnnualIncome",
+            "subHeader": "ANNUAL_INCOME_SUB_TITLE",
+            "showAllDynamicAnual":true,
+            "currency": "€",
+            "options": [
+                {
+                    "label": "0_25000",
+                    "value": "ESTIMATE_LESS25"
+                },
+                {
+                    "label": "25000_49999",
+                    "value": "ESTIMATE_25_50"
+                },
+                {
+                    "label": "50000_99999",
+                    "value": "ESTIMATE_50_1LAKH"
+                },
+                {
+                    "label": "100000_249999",
+                    "value": "ESTIMATE_1LAKH_2_5LAKH"
+                },
+                {
+                    "label": "250000_1000000",
+                    "value": "ESTIMATE_2_5lakh_1MILLION"
+                },
+                {
+                    "label": "over 1000000",
+                    "value": "ESTIMATE_MORE_1MILLION"
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "cardKey": 1,
+            "headerIcon": "ESTIMATE_WEALTH_ICON",
+            "isMultiSelect": false,
+            "header": "netWorth",
+            "subHeader": "SESTIMATE_WEALTH_SUBHEADER",
+            "showAllDynamicNetWorth":true,
+            "currency": "€",
+            "options": [
+                {
+                    "label": "ESTIMATE_LESS25",
+                    "value": "ESTIMATE_LESS25"
+                },
+                {
+                    "label": "ESTIMATE_25_50",
+                    "value": "ESTIMATE_25_50"
+                },
+                {
+                    "label": "ESTIMATE_50_1LAKH",
+                    "value": "ESTIMATE_50_1LAKH"
+                },
+                {
+                    "label": "ESTIMATE_1LAKH_2_5LAKH",
+                    "value": "ESTIMATE_1LAKH_2_5LAKH"
+                },
+                {
+                    "label": "ESTIMATE_2_5lakh_1MILLION",
+                    "value": "ESTIMATE_2_5lakh_1MILLION"
+                },
+                {
+                    "label": "ESTIMATE_1MILLON_5MILLION",
+                    "value": "ESTIMATE_1MILLON_5MILLION"
+                },
+                {
+                    "label": "ESTIMATE_5MILLON_10MILLION",
+                    "value": "ESTIMATE_5MILLON_10MILLION"
+                },
+                {
+                    "label": "ESTIMATE_MORE_10MILLION",
+                    "value": "ESTIMATE_MORE_10MILLION"
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "cardKey": 2,
+            "headerIcon": "WEALTH_SOURCE",
+            "isMultiSelect": false,
+            "header": "sourceOfWealth",
+            "optionDependency": [
+                "netWorth"
+            ],
+            "dependantLinkText": "ESTIMATED_WEALTH_FROM",
+            "filterOptions": false,
+            "currency": "€",
+            "options": [
+                {
+                    "label": "CASH_SAVING",
+                    "value": "CASH_SAVING",
+                    "icon": "savings"
+                },
+                {
+                    "label": "INVESTMENT_PORTFOLIO",
+                    "value": "INVESTMENT_PORTFOLIO",
+                    "icon": "pie_chart"
+                },
+                {
+                    "label": "INHERITANCE",
+                    "value": "INHERITANCE",
+                    "icon": "diversity_4",
+                    "materialSymbol":true
+                },
+                {
+                    "label": "PENSION",
+                    "value": "PENSION",
+                    "icon": "price_change"
+                },
+                {
+                    "label": "RENTAL_INCOME",
+                    "value": "RENTAL_INCOME",
+                    "icon": "local_atm"
+                },
+                {
+                    "label": "PROPERTY_SELL",
+                    "value": "PROPERTY_SELL",
+                    "icon": "local_atm"
+                },
+                {
+                    "label": "ROYALTY_INCOME",
+                    "value": "ROYALTY_INCOME",
+                    "icon": "sell"
+                },
+                {
+                    "label": "EMPLOYMENT",
+                    "value": "EMPLOYMENT",
+                    "icon": "account_balance_wallet"
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "cardKey": 3,
+            "headerIcon": "TRADING_FUNDS_COME_ICON",
+            "isMultiSelect": true,
+            "header": "sourceOfTradingFund",
+            "subHeader": "SOFT_SUB_HEADER",
+            "mobileColumn2": false,
+            "sectionDependency": {
+                "name": "employmentInfo",
+                "ques": "employmentStatus"
+            },
+            "options": [
+                {
+                    "label": "SALARY",
+                    "value": "SALARY",
+                    "icon": "account_balance_wallet",
+                    "category": [
+                        "EMPLOYED",
+                        "SELF_EMPLOYED"
+                    ]
+                },
+                {
+                    "label": "INVESTMENTS_DIVIDENDS",
+                    "value": "INVESTMENTS_DIVIDENDS",
+                    "icon": "price_change",
+                    "category": [
+                        "EMPLOYED",
+                        "SELF_EMPLOYED",
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "FUND_RENTAL_INCOME",
+                    "value": "RENTAL_INCOME",
+                    "icon": "assured_workload",
+                    "category": [
+                        "EMPLOYED",
+                        "SELF_EMPLOYED",
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "SALE_PROPERTY",
+                    "value": "SALE_PROPERTY",
+                    "icon": "account_balance_wallet",
+                    "category": [
+                        "EMPLOYED",
+                        "SELF_EMPLOYED",
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "SAVINGS",
+                    "value": "SAVINGS",
+                    "icon": "savings",
+                    "category": [
+                        "EMPLOYED",
+                        "SELF_EMPLOYED"
+                    ]
+                },
+                {
+                    "label": "FUND_INHERITANCE",
+                    "value": "INHERITANCE",
+                    "icon": "real_estate_agent",
+                    "category": [
+                        "EMPLOYED",
+                        "SELF_EMPLOYED",
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "ROYALTIES",
+                    "value": "ROYALTIES",
+                    "icon": "sell",
+                    "category": [
+                        "EMPLOYED",
+                        "SELF_EMPLOYED",
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "SAVINGS_FROM_PRIOR_EMPLOYMENT",
+                    "value": "SAVINGS_FROM_PRIOR_EMPLOYMENT",
+                    "icon": "savings",
+                    "category": [
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "FUND_PENSION",
+                    "value": "FUND_PENSION",
+                    "icon": "assignment_returned",
+                    "category": [
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "GOVERNMENT_SUPPORT_SOCIAL_SECURITY",
+                    "value": "GOVERNMENT_SUPPORT_SOCIAL_SECURITY",
+                    "icon": "diversity_4",
+                    "materialSymbol":true,
+                    "category": [
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                },
+                {
+                    "label": "LOAN",
+                    "value": "LOAN",
+                    "icon": "local_atm",
+                    "category": [
+                        "RETIRED",
+                        "UNEMPLOYED"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "question",
+            "cardKey": 4,
+            "headerIcon": "CONTRIBUTE_ACCOUNT_ICON",
+            "isMultiSelect": false,
+            "header": "intendToFund",
+            "subHeader": "INTEND_TO_FUND_SUBHEADER",
+            "currency": "€",
+            "options": [
+                {
+                    "label": "LESS_THOUSAND",
+                    "value": "LESS_THOUSAND"
+                },
+                {
+                    "label": "THOUSAND_FIVETHOUSAND",
+                    "value": "THOUSAND_FIVETHOUSAND"
+                },
+                {
+                    "label": "FIVETHOUSAND_TENTHOUSAND",
+                    "value": "FIVETHOUSAND_TENTHOUSAND"
+                },
+                {
+                    "label": "MORE_TENTHOUSAND",
+                    "value": "MORE_TENTHOUSAND"
+                }
+            ]
+        }
+    ]
+}
