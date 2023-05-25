@@ -61,6 +61,7 @@ const Footer = styled('div')(({ theme }) => ({
   boxShadow: "0px -4px 12px rgba(33, 33, 33, 0.05)",
   maxWidth: "100vw",
   boxSizing: "border-box",
+  zIndex: "1",
 }));
 
 
@@ -132,7 +133,7 @@ export default function CustomStepper() {
             ))}
           </StyledStepper>
         </div>
-        <div>{renderStepContent()}</div>
+        <div style={{backgroundColor:"#F5F5F5"}}>{renderStepContent()}</div>
         <Footer>
           <PrevButton variant="outlined" color="primary" disableElevation onClick={handleBack} disabled={activeStep === 0}>
             Back
