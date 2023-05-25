@@ -32,7 +32,7 @@
             "cardKey": 1,
             "headerIcon": "TRADING_CFD_ICON",
             "isMultiSelect": false,
-            "header": "newToTrading",
+            "header": "New To Trading",
             "dependency": [
                 {
                     "sectionKey": 6,
@@ -59,7 +59,7 @@
             "cardKey": 2,
             "headerIcon": "TRADING_CFD_ICON",
             "isMultiSelect": true,
-            "header": "tradingCfd",
+            "header": "Trading Cfd",
             "subHeader": "TRADING_INFO_SUBHEADER",
             "backButton": true,
             "column": 1,
@@ -106,7 +106,7 @@
             "type": "question",
             "cardKey": 3,
             "headerIcon": "TRADING_CFD_ICON",
-            "header": "noOfTradedCFD",
+            "header": "No Of Traded CFD",
             "subHeader": "",
             "column": 3,
             "options": [

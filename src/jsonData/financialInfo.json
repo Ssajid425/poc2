@@ -7,7 +7,7 @@
             "cardKey": 0,
             "headerIcon": "ANNUAL_INCOME_ICON",
             "isMultiSelect": false,
-            "header": "totalAnnualIncome",
+            "header": "Total Annual Income",
             "subHeader": "ANNUAL_INCOME_SUB_TITLE",
             "showAllDynamicAnual":true,
             "currency": "€",
@@ -43,7 +43,7 @@
             "cardKey": 1,
             "headerIcon": "ESTIMATE_WEALTH_ICON",
             "isMultiSelect": false,
-            "header": "netWorth",
+            "header": "Net Worth",
             "subHeader": "SESTIMATE_WEALTH_SUBHEADER",
             "showAllDynamicNetWorth":true,
             "currency": "€",
@@ -87,7 +87,7 @@
             "cardKey": 2,
             "headerIcon": "WEALTH_SOURCE",
             "isMultiSelect": false,
-            "header": "sourceOfWealth",
+            "header": "Source of Wealth",
             "optionDependency": [
                 "netWorth"
             ],
@@ -142,8 +142,8 @@
             "type": "question",
             "cardKey": 3,
             "headerIcon": "TRADING_FUNDS_COME_ICON",
-            "isMultiSelect": true,
-            "header": "sourceOfTradingFund",
+            "isMultiSelect": false,
+            "header": "Source of Trading Fund",
             "subHeader": "SOFT_SUB_HEADER",
             "mobileColumn2": false,
             "sectionDependency": {
@@ -268,7 +268,7 @@
             "cardKey": 4,
             "headerIcon": "CONTRIBUTE_ACCOUNT_ICON",
             "isMultiSelect": false,
-            "header": "intendToFund",
+            "header": "Intend To Fund",
             "subHeader": "INTEND_TO_FUND_SUBHEADER",
             "currency": "€",
             "options": [
